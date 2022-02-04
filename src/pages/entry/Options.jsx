@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
 import ScoopOption from "./ScoopOption";
 
-export const Options = ({ optionType }) => {
+const Options = ({ optionType }) => {
   const [items, setItems] = useState([]);
 
   // optionType is scoops or toppings
@@ -29,3 +29,5 @@ export const Options = ({ optionType }) => {
 
   return <Row>{optionItems}</Row>;
 };
+
+export default Options;
